@@ -1,0 +1,396 @@
+{
+  "schema": 1,
+  "version": "0.61.1",
+  "keys": [
+    {
+      "action": "undo",
+      "id": "keyUndo",
+      "key": "F7",
+      "level": "quick"
+    },
+    {
+      "action": "redo",
+      "id": "keyRedo",
+      "key": "F8",
+      "level": "quick"
+    },
+    {
+      "action": "switch fill/clear",
+      "id": "keyMode",
+      "key": "Q",
+      "level": "quick"
+    },
+    {
+      "action": "start point",
+      "id": "keyMark",
+      "key": "1",
+      "level": "quick"
+    },
+    {
+      "action": "waypoint",
+      "id": "keyLine",
+      "key": "2",
+      "level": "builder"
+    },
+    {
+      "action": "end point",
+      "id": "keyWall",
+      "key": "3",
+      "level": "builder"
+    },
+    {
+      "action": "build it",
+      "id": "keyVolume",
+      "key": "F",
+      "level": "quick"
+    },
+    {
+      "action": "clear points",
+      "id": "keyStack",
+      "key": "5",
+      "level": "quick"
+    },
+    {
+      "action": "free point",
+      "id": "keyFreePoint",
+      "key": "LeftAlt",
+      "level": "builder"
+    },
+    {
+      "action": "wall height",
+      "id": "keyWallHeight",
+      "key": "LeftShift",
+      "level": "quick"
+    },
+    {
+      "action": "wall width",
+      "id": "keyWallThickness",
+      "key": "X",
+      "level": "quick"
+    },
+    {
+      "action": "start point (free point)",
+      "id": "keyMarkFree",
+      "key": "Alt+1",
+      "level": "builder"
+    },
+    {
+      "action": "waypoint (free point)",
+      "id": "keyLineFree",
+      "key": "Alt+2",
+      "level": "builder"
+    },
+    {
+      "action": "end point (free point)",
+      "id": "keyWallFree",
+      "key": "Alt+3",
+      "level": "builder"
+    },
+    {
+      "action": "build it (free point)",
+      "id": "keyVolumeFree",
+      "key": "Alt+4",
+      "level": "builder"
+    },
+    {
+      "action": "tool line",
+      "id": "keyToolLine",
+      "key": "F1",
+      "level": "quick"
+    },
+    {
+      "action": "tool wall",
+      "id": "keyToolWall",
+      "key": "F2",
+      "level": "quick"
+    },
+    {
+      "action": "tool floor",
+      "id": "keyToolFloor",
+      "key": "F3",
+      "level": "quick"
+    },
+    {
+      "action": "tool volume",
+      "id": "keyToolVolume",
+      "key": "F4",
+      "level": "quick"
+    },
+    {
+      "action": "tool stack",
+      "id": "keyToolStack",
+      "key": "F5",
+      "level": "builder"
+    },
+    {
+      "action": "tool change material",
+      "id": "keyToolMaterial",
+      "key": "F6",
+      "level": "builder"
+    },
+    {
+      "action": "switch after build",
+      "id": "keyAfterBuild",
+      "key": "Shift+X",
+      "level": "builder"
+    },
+    {
+      "action": "switch replace",
+      "id": "keyReplace",
+      "key": "Shift+Q",
+      "level": "builder"
+    },
+    {
+      "action": "switch panel",
+      "id": "keyPanel",
+      "key": "T",
+      "level": "quick"
+    },
+    {
+      "action": "switch measure panel",
+      "id": "keyMeasure",
+      "key": "Shift+T",
+      "level": "builder"
+    },
+    {
+      "action": "switch solid line",
+      "id": "keySolid",
+      "key": "Shift+E",
+      "level": "builder"
+    },
+    {
+      "action": "profile next handle",
+      "id": "keyProfileNext",
+      "key": "Numpad5",
+      "level": "architect"
+    },
+    {
+      "action": "profile up",
+      "id": "keyProfileUp",
+      "key": "Numpad8",
+      "level": "architect"
+    },
+    {
+      "action": "profile down",
+      "id": "keyProfileDown",
+      "key": "Numpad2",
+      "level": "architect"
+    },
+    {
+      "action": "profile left",
+      "id": "keyProfileLeft",
+      "key": "Numpad4",
+      "level": "architect"
+    },
+    {
+      "action": "profile right",
+      "id": "keyProfileRight",
+      "key": "Numpad6",
+      "level": "architect"
+    },
+    {
+      "action": "profile shape +",
+      "id": "keyProfileCurveMore",
+      "key": "NumpadAdd",
+      "level": "architect"
+    },
+    {
+      "action": "profile shape -",
+      "id": "keyProfileCurveLess",
+      "key": "NumpadSubtract",
+      "level": "architect"
+    },
+    {
+      "action": "switch profile corners",
+      "id": "keyProfileCorners",
+      "key": "NumpadMultiply",
+      "level": "architect"
+    },
+    {
+      "action": "profile wall +",
+      "id": "keyProfileWallMore",
+      "key": "Numpad9",
+      "level": "architect"
+    },
+    {
+      "action": "profile wall -",
+      "id": "keyProfileWallLess",
+      "key": "Numpad7",
+      "level": "architect"
+    },
+    {
+      "action": "profile reset",
+      "id": "keyProfileReset",
+      "key": "NumpadDecimal",
+      "level": "architect"
+    },
+    {
+      "action": "profile natural -",
+      "id": "keyProfileNaturalLess",
+      "key": "Numpad1",
+      "level": "architect"
+    },
+    {
+      "action": "profile natural +",
+      "id": "keyProfileNaturalMore",
+      "key": "Numpad3",
+      "level": "architect"
+    },
+    {
+      "action": "profile redraw",
+      "id": "keyProfileRedraw",
+      "key": "Numpad0",
+      "level": "architect"
+    },
+    {
+      "action": "switch free profile",
+      "id": "keyProfileFree",
+      "key": "NumpadDivide",
+      "level": "architect"
+    },
+    {
+      "action": "switch natural only adding",
+      "id": "keyProfileGrowOnly",
+      "key": "NumpadEnter",
+      "level": "architect"
+    },
+    {
+      "action": "switch fill material",
+      "id": "keyFillMaterial",
+      "key": "V",
+      "level": "builder"
+    },
+    {
+      "action": "switch level",
+      "id": "keyLevel",
+      "key": "Backquote",
+      "level": "quick"
+    },
+    {
+      "action": "switch selection target",
+      "id": "keySelectTarget",
+      "key": "C",
+      "level": "builder"
+    },
+    {
+      "action": "switch world edges",
+      "id": "keyWorldEdges",
+      "key": "Ctrl+F1",
+      "level": "builder"
+    },
+    {
+      "action": "switch preview",
+      "id": "keyPreview",
+      "key": "Shift+F1",
+      "level": "builder"
+    },
+    {
+      "action": "switch preview size",
+      "id": "keyPreviewLarge",
+      "key": "Shift+F2",
+      "level": "builder"
+    },
+    {
+      "action": "preview level up",
+      "id": "keyPreviewUp",
+      "key": "Up",
+      "level": "builder"
+    },
+    {
+      "action": "preview level down",
+      "id": "keyPreviewDown",
+      "key": "Down",
+      "level": "builder"
+    },
+    {
+      "action": "preview cut nearer",
+      "id": "keyPreviewLeft",
+      "key": "Left",
+      "level": "builder"
+    },
+    {
+      "action": "preview cut farther",
+      "id": "keyPreviewRight",
+      "key": "Right",
+      "level": "builder"
+    },
+    {
+      "action": "preview move forward",
+      "id": "keyPreviewPanForward",
+      "key": "Shift+Up",
+      "level": "builder"
+    },
+    {
+      "action": "preview move back",
+      "id": "keyPreviewPanBack",
+      "key": "Shift+Down",
+      "level": "builder"
+    },
+    {
+      "action": "preview move left",
+      "id": "keyPreviewPanLeft",
+      "key": "Shift+Left",
+      "level": "builder"
+    },
+    {
+      "action": "preview move right",
+      "id": "keyPreviewPanRight",
+      "key": "Shift+Right",
+      "level": "builder"
+    },
+    {
+      "action": "preview zoom in",
+      "id": "keyPreviewZoomIn",
+      "key": "I",
+      "level": "builder"
+    },
+    {
+      "action": "preview zoom out",
+      "id": "keyPreviewZoomOut",
+      "key": "O",
+      "level": "builder"
+    },
+    {
+      "action": "preview recenter",
+      "id": "keyPreviewCenter",
+      "key": "Home",
+      "level": "builder"
+    },
+    {
+      "action": "switch preview 2D/3D",
+      "id": "keyPreview3D",
+      "key": "Shift+F3",
+      "level": "architect"
+    },
+    {
+      "action": "switch preview underground",
+      "id": "keyPreviewUnderground",
+      "key": "Shift+F4",
+      "level": "builder"
+    },
+    {
+      "action": "switch preview X-ray",
+      "id": "keyPreviewSeeThrough",
+      "key": "Shift+F5",
+      "level": "builder"
+    },
+    {
+      "action": "switch preview edges",
+      "id": "keyPreviewPlain",
+      "key": "Shift+F6",
+      "level": "builder"
+    },
+    {
+      "action": "switch preview rotation",
+      "id": "keyPreviewSpin",
+      "key": "Shift+F8",
+      "level": "builder"
+    },
+    {
+      "action": "switch preview camera",
+      "id": "keyPreviewCamera",
+      "key": "Shift+F7",
+      "level": "builder"
+    }
+  ]
+}
