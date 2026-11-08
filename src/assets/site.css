@@ -1,0 +1,125 @@
+/* Emberwright site. Identity: assets/README.md of the mod (gold #E2B65A on night blue #12162a,
+   Cinzel for names). The game's own colors (hologram blue, start green, end violet) only where
+   they mean what they mean in game. Fonts are served from this site (SIL OFL, assets/fonts). */
+
+@font-face { font-family: "Cinzel"; font-weight: 700; font-style: normal; font-display: swap; src: url("fonts/cinzel-latin-700-normal.woff2") format("woff2"); }
+@font-face { font-family: "Alegreya Sans"; font-weight: 400; font-style: normal; font-display: swap; src: url("fonts/alegreya-sans-latin-400-normal.woff2") format("woff2"); }
+@font-face { font-family: "Alegreya Sans"; font-weight: 700; font-style: normal; font-display: swap; src: url("fonts/alegreya-sans-latin-700-normal.woff2") format("woff2"); }
+@font-face { font-family: "IBM Plex Mono"; font-weight: 400; font-style: normal; font-display: swap; src: url("fonts/ibm-plex-mono-latin-400-normal.woff2") format("woff2"); }
+
+:root {
+  --night: #0d1120;
+  --panel: #151a2e;
+  --panel-2: #1b2139;
+  --rule: #2a3150;
+  --gold: #e2b65a;
+  --gold-deep: #a9822f;
+  --gold-soft: #f3d993;
+  --parch: #e4dfd2;
+  --muted: #a3a6b6;
+  --holo: #78c8ff;
+  --start: #5fd383;
+  --end: #b08af2;
+  --font-display: "Cinzel", "Trajan Pro", Georgia, serif;
+  --font-body: "Alegreya Sans", "Segoe UI", system-ui, sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, "Cascadia Mono", Consolas, monospace;
+  --step--1: 0.875rem;
+  --step-0: 1.0625rem;
+  --step-1: 1.25rem;
+  --step-2: 1.6rem;
+  --step-3: 2.2rem;
+  --step-4: clamp(2.6rem, 7vw, 4.4rem);
+  color-scheme: dark;
+}
+* { box-sizing: border-box; }
+html { background: var(--night); }
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: var(--night);
+  color: var(--parch);
+  font-family: var(--font-body);
+  font-size: var(--step-0);
+  line-height: 1.55;
+  padding-top: env(safe-area-inset-top, 0px);
+  padding-bottom: env(safe-area-inset-bottom, 0px);
+}
+main { flex: 1; }
+img { max-width: 100%; }
+a { color: var(--gold-soft); text-underline-offset: 3px; }
+a:hover { color: var(--gold); }
+:focus-visible { outline: 2px solid var(--gold); outline-offset: 3px; border-radius: 4px; }
+h1, h2, h3 { text-wrap: balance; margin: 0; }
+p { margin: 0; }
+.wrap {
+  max-width: 1120px;
+  margin: 0 auto;
+  padding-left: max(16px, env(safe-area-inset-left, 0px));
+  padding-right: max(16px, env(safe-area-inset-right, 0px));
+}
+.eyebrow { font-size: var(--step--1); letter-spacing: 0.14em; text-transform: uppercase; color: var(--gold); font-weight: 700; }
+kbd { font-family: var(--font-mono); font-size: 0.82em; display: inline-block; min-width: 1.9em; text-align: center; padding: 1px 6px; border-radius: 5px; background: var(--panel-2); border: 1px solid #3a4266; border-bottom-width: 3px; color: var(--parch); line-height: 1.5; }
+
+/* top bar */
+.topbar { border-bottom: 1px solid var(--rule); }
+.topbar .wrap { display: flex; align-items: center; justify-content: space-between; gap: 16px; padding-block: 12px; flex-wrap: wrap; }
+.brand { display: flex; align-items: center; gap: 10px; text-decoration: none; color: var(--parch); }
+.brand:hover { color: var(--parch); }
+.brand img { height: 32px; width: auto; }
+.brand-name { display: flex; flex-direction: column; line-height: 1; gap: 5px; }
+.brand-name strong { font-family: var(--font-display); font-weight: 700; letter-spacing: 0.14em; font-size: 0.98rem; }
+.brand-name small { color: var(--gold); font-size: 0.62rem; letter-spacing: 0.3em; }
+.lang { display: flex; gap: 2px; border: 1px solid var(--rule); border-radius: 7px; padding: 2px; font-size: 0.8rem; }
+.lang a { color: var(--muted); text-decoration: none; padding: 3px 8px; border-radius: 5px; }
+.lang a:hover { color: var(--parch); }
+.lang a[aria-current="true"] { background: var(--panel-2); color: var(--parch); }
+
+/* framed links, after ShroudForge's F9 header */
+.pill { display: inline-flex; align-items: center; gap: 12px; padding: 12px 18px; border-radius: 10px; border: 1px solid var(--pill-border); background: var(--pill-bg); color: var(--pill-color); text-decoration: none; font-weight: 700; transition: background 0.15s, border-color 0.15s, box-shadow 0.15s; }
+.pill:hover { color: var(--pill-color); border-color: var(--pill-border-hover); background: var(--pill-bg-hover); box-shadow: 0 5px 17px var(--pill-glow); }
+.pill svg { width: 24px; height: 24px; flex: none; fill: none; stroke: currentColor; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
+.pill small { display: block; font-weight: 400; font-size: 0.8rem; opacity: 0.8; }
+.pill.discord { --pill-color: #c3c8ff; --pill-border: rgba(88,101,242,0.55); --pill-bg: rgba(55,63,145,0.32); --pill-border-hover: rgba(139,149,255,0.8); --pill-bg-hover: rgba(71,82,190,0.5); --pill-glow: rgba(88,101,242,0.25); }
+.pill.coffee { --pill-color: #ffe27a; --pill-border: rgba(255,221,0,0.45); --pill-bg: rgba(120,98,10,0.28); --pill-border-hover: rgba(255,221,0,0.75); --pill-bg-hover: rgba(150,122,10,0.42); --pill-glow: rgba(255,221,0,0.18); }
+
+/* coming soon */
+.soon {
+  background:
+    radial-gradient(60% 80% at 75% 40%, rgba(120,200,255,0.08), transparent 70%),
+    radial-gradient(50% 60% at 15% 10%, rgba(226,182,90,0.07), transparent 70%),
+    var(--night);
+}
+.soon .wrap { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.1fr); gap: 40px; align-items: center; padding-block: 64px; }
+.soon-text { display: grid; gap: 20px; min-width: 0; justify-items: start; }
+.soon h1 { font-family: var(--font-display); font-weight: 700; font-size: var(--step-4); line-height: 1.02; letter-spacing: 0.05em;
+  background: linear-gradient(180deg, var(--gold-soft), var(--gold) 55%, var(--gold-deep)); -webkit-background-clip: text; background-clip: text; color: transparent; }
+.soon .lede { font-size: var(--step-1); max-width: 34ch; opacity: 0.9; }
+.status { display: inline-flex; align-items: center; gap: 10px; font-family: var(--font-display); letter-spacing: 0.12em; color: var(--gold); font-size: var(--step-0); }
+.status::before { content: ""; width: 9px; height: 9px; background: var(--gold); transform: rotate(45deg); box-shadow: 0 0 12px rgba(226,182,90,0.6); }
+.stage { position: relative; min-width: 0; }
+.stage canvas { width: 100%; aspect-ratio: 4 / 3; max-width: 100%; display: block; }
+.hud { position: absolute; left: 0; bottom: 4%; display: flex; gap: 10px; align-items: center; background: rgba(13,17,32,0.82); border: 1px solid var(--rule); border-radius: 8px; padding: 6px 12px; font-size: var(--step--1); }
+
+/* text pages (privacy, legal) */
+.doc .wrap { padding-block: 56px 72px; }
+.doc article { max-width: 68ch; display: grid; gap: 18px; }
+.doc h1 { font-family: var(--font-display); font-size: var(--step-3); letter-spacing: 0.04em; }
+.doc h2 { font-size: var(--step-1); margin-top: 14px; }
+.doc p, .doc li { color: var(--parch); opacity: 0.9; }
+.doc ul { margin: 0; padding-left: 1.2em; display: grid; gap: 6px; }
+.doc .updated { color: var(--muted); font-size: var(--step--1); }
+
+/* footer */
+.footer { border-top: 1px solid var(--rule); font-size: var(--step--1); color: var(--muted); }
+.footer .wrap { display: grid; gap: 8px; padding-block: 28px 36px; }
+.footer-links { display: flex; gap: 18px; flex-wrap: wrap; }
+.footer-links a { color: var(--parch); }
+
+@media (max-width: 860px) {
+  .soon .wrap { grid-template-columns: minmax(0, 1fr); padding-block: 40px; }
+}
+@media (max-width: 480px) {
+  .hud { position: static; margin-top: 8px; width: fit-content; }
+}

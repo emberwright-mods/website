@@ -1,0 +1,17 @@
+<section class="soon">
+  <div class="wrap">
+    <div class="soon-text">
+      <p class="eyebrow">{{t.soon.eyebrow}}</p>
+      <h1>Architect Lines</h1>
+      <p class="lede">{{t.soon.lede}}</p>
+      <p class="status">{{t.soon.status}}</p>
+      <a class="pill discord" href="https://discord.gg/Pbev3kJmdu"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i-discord"/></svg><span>{{t.soon.discord}}<small>{{t.soon.discord_sub}}</small></span></a>
+    </div>
+    <div class="stage">
+      <canvas id="scene" role="img" aria-label="{{t.scene.label}}"
+        data-start="{{t.scene.start}}" data-aim="{{t.scene.aim}}" data-build="{{t.scene.build}}" data-undo="{{t.scene.undo}}"></canvas>
+      <div class="hud" aria-hidden="true"><kbd id="hud-key">1</kbd><b id="hud-label">{{t.scene.start}}</b></div>
+    </div>
+  </div>
+</section>
+<script src="{{root}}assets/scene.js" defer></script>
