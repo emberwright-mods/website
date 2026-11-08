@@ -25,6 +25,8 @@ Placeholders, in the layout and the pages:
   {{home}}             relative path to this language's home page
   {{page.<name>}}      relative path to page <name> in this language
   {{lang}}             the page's language code
+  {{assets.version}}   short hash of the styles and scripts, appended to their links
+                       (?v=...) so browsers fetch them again after each change
   {{alternates}}       <link rel="alternate" hreflang> tags of this page
   {{switcher}}         the language links of this page
   {{nav}}              the page's own top bar links (<name>.nav.html), or nothing
@@ -36,6 +38,7 @@ Every language must have exactly the same keys, and no placeholder may be
 left: the build stops otherwise, so a page never ships half translated.
 """
 
+import hashlib
 import html
 import json
 import re
@@ -215,6 +218,15 @@ def rel(from_dir, to_dir):
     return up + (to_dir + "/" if to_dir else "")
 
 
+def assets_version():
+    """Short hash of src/assets' styles and scripts, for ?v= on their links."""
+    digest = hashlib.sha256()
+    for path in sorted((SRC / "assets").glob("*")):
+        if path.suffix in (".css", ".js"):
+            digest.update(path.name.encode() + b"\0" + path.read_bytes())
+    return digest.hexdigest()[:10]
+
+
 def render(text, values, where):
     def replace(match):
         key = match.group(1)
@@ -260,6 +272,7 @@ def main():
         shutil.rmtree(OUT)
     OUT.mkdir()
     layout = (SRC / "layout.html").read_text(encoding="utf-8")
+    version = assets_version()
     warnings = set()
 
     for lang in langs:
@@ -271,6 +284,7 @@ def main():
             values.update(shared)
             values["root"] = rel(here, "")
             values["lang"] = lang
+            values["assets.version"] = version
             values["home"] = rel(here, page_dir(lang, default_lang, "index"))
             for other in pages:
                 values["page." + other] = rel(here, page_dir(lang, default_lang, other))
