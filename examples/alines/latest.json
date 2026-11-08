@@ -1,0 +1,20 @@
+{
+  "schema": 1,
+  "channel": "beta",
+  "tag": "v1.8.0-build.3",
+  "published": "2026-11-20T18:00:00Z",
+  "releaseUrl": "https://github.com/emberwright-mods/alines-releases/releases/tag/v1.8.0-build.3",
+  "alines": { "version": "0.61.0" },
+  "shroudforge": { "version": "1.8.0", "build": 12, "edition": "AL Edition" },
+  "installer": {
+    "name": "install_alines.exe",
+    "url": "https://github.com/emberwright-mods/alines-releases/releases/download/v1.8.0-build.3/install_alines.exe",
+    "size": 9853952,
+    "sha256": "3f9c1e07a2b45d8e6c0f17ab9e2d4c58b1a7f03e96d2c4b8a5e1f7d09c3b6a24",
+    "publisher": null
+  },
+  "scans": {
+    "defender": "clean",
+    "virustotal": { "result": "clean", "detections": 0, "engines": 72, "url": "https://www.virustotal.com/gui/file/3f9c1e07a2b45d8e6c0f17ab9e2d4c58b1a7f03e96d2c4b8a5e1f7d09c3b6a24" }
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "schema": 1,
+  "entries": [
+    {
+      "version": "0.61.0",
+      "text": "Wall and Floor replace Surface. The wall follows the path (start, waypoints, end), rising and falling with it; the mouse wheel sets its height, Shift+wheel its thickness. The floor is a rectangle at the start's height, Shift+wheel its thickness. Quick starts on Wall. Tools: F1 line, F2 wall, F3 floor, F4 volume, F5 stack, F6 change material. The free point is held on Alt."
+    },
+    {
+      "version": "0.60.2",
+      "text": "the measure panel (Shift+T) shows without a start point too, and says to set one. Hidden, the panel key sits in the very corner, under the game's hints. The WireView is hidden at the very first start, at every level."
+    },
+    {
+      "version": "0.60.1",
+      "text": "no Next step frame (a tutorial will come). Quick gains clear points and the volume tool, with separators. The measures leave the panel for a small measure panel top right (Builder, Architect; Shift+T, F9 > Measure panel). Compact and hidden show the panel key (hidden: bottom left). No Steam ID on the panel. F9 > Digit keys on the panel: 1(&), 1 or &."
+    },
+    {
+      "version": "0.60.0",
+      "text": "three levels in place of the advanced mode, switch level (same key, under Escape) goes round them, shown on the panel. Quick: start point, aim, build it, line and surface, Remove, undo, redo. Builder adds every tool, waypoints, end point, free point, the panel's options and the 3D WireView. Architect: everything, with the line profile. Keys above your level go back to the game. The level is kept; the very first start is Quick."
+    },
+    {
+      "version": "0.59.4",
+      "text": "while Architect Line waits for a 0.5 m block (another hammer shape), only its small panel shows: no next step, preview or tip, and the preview is no longer computed."
+    },
+    {
+      "version": "0.59.3",
+      "text": "Architect Line no longer turns on with other tools: the vegetation tool and the summoning tool, and, for a player who joined another game, the pickaxe, the rake, the bow, a staff aimed at the ground or a plant to place. The hammer's building mode now comes with the cursor, read on each player's own game. Needs ShroudForge AL Edition of 7/11. New diagnostic Tool detection."
+    },
+    {
+      "version": "0.59.2",
+      "text": "the build shows in the world again with upscaling in Performance and Ultra performance (FSR, DLSS, XeSS) and with the game's automatic or 3D render scale. With temporal anti-aliasing it still flickers where it touches the game's surfaces: FXAA avoids it for now. The performance diagnostic logs the memory every 5 minutes (the game's graphics memory and budget, this mod's share, the game's and the system's memory)."
+    },
+    {
+      "version": "0.59.1",
+      "text": "the DLL carries its version: when the mod's files and its native folder come from different versions, the log says so at load and the panel keeps a warning (reinstall the whole mod). The version also shows in the DLL's Windows properties."
+    },
+    {
+      "version": "0.59.0",
+      "text": "Architect Line brings its own native DLL: the overlay (panel, build in the world, WireView) and the 3D view builders now live in the mod, connected through ShroudForge's mod native bridge. Needs ShroudForge AL Edition of 2/11 (official 1.7.7 and our pull requests, without the old overlay). The overlay's size, opacity and hiding in menus are now settings of Architect Line (Advanced: Panel); ShroudForge's overlay show/hide key is gone."
+    },
+    {
+      "version": "0.58.6",
+      "text": "the solid view no longer stutters while the camera turns: the world's blocks around the build no longer follow the eye there (only the wire view needs them up to the eye). Needs the overlay of 1/11 (the build projected on the graphics card)."
+    }
+  ]
+}

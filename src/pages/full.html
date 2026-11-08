@@ -1,0 +1,209 @@
+<section class="soon hero">
+  <div class="wrap">
+    <div class="soon-text">
+      <p class="eyebrow">{{t.soon.eyebrow}}</p>
+      <h1>Architect Lines</h1>
+      <p class="lede">{{t.soon.lede}}</p>
+      <div class="cta">
+        {{alines.cta}}
+        <a class="pill discord" href="https://discord.gg/Pbev3kJmdu"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i-discord"/></svg><span>{{t.soon.discord}}<small>{{t.soon.discord_sub}}</small></span></a>
+      </div>
+      <ul class="facts">
+        <li>{{t.hero.fact_steam}}</li>
+        <li>{{t.hero.fact_edition}}</li>
+        <li>{{t.hero.fact_updates}}</li>
+      </ul>
+    </div>
+    <div class="stage">
+      <canvas id="scene" role="img" aria-label="{{t.scene.label}}"
+        data-start="{{t.scene.start}}" data-aim="{{t.scene.aim}}" data-build="{{t.scene.build}}" data-undo="{{t.scene.undo}}"></canvas>
+      <div class="hud" aria-hidden="true"><kbd id="hud-key">1</kbd><b id="hud-label">{{t.scene.start}}</b></div>
+    </div>
+  </div>
+</section>
+
+<section class="band-section" id="how">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="eyebrow">{{t.how.eyebrow}}</p>
+      <h2>{{t.how.h}}</h2>
+    </div>
+    <div class="gestures">
+      <div class="gesture">
+        <span class="num">1</span>
+        <h3>{{t.how.start_h}} {{key.keyMark}}</h3>
+        <p>{{t.how.start}}</p>
+      </div>
+      <div class="gesture">
+        <span class="num">2</span>
+        <h3>{{t.how.aim_h}}</h3>
+        <p>{{t.how.aim}}</p>
+      </div>
+      <div class="gesture">
+        <span class="num">3</span>
+        <h3>{{t.how.build_h}} {{key.keyVolume}}</h3>
+        <p>{{t.how.build}}</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="band-section" id="tools">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="eyebrow">{{t.tools.eyebrow}}</p>
+      <h2>{{t.tools.h}}</h2>
+      <p class="lede">{{t.tools.lede}}</p>
+    </div>
+    <div class="tools">
+      <article class="tool"><canvas data-tool="line" aria-hidden="true"></canvas><div class="tool-head"><h3>{{t.tool.line}}</h3>{{key.keyToolLine}}</div><p>{{t.tool.line_text}}</p></article>
+      <article class="tool"><canvas data-tool="wall" aria-hidden="true"></canvas><div class="tool-head"><h3>{{t.tool.wall}}</h3>{{key.keyToolWall}}</div><p>{{t.tool.wall_text}}</p></article>
+      <article class="tool"><canvas data-tool="floor" aria-hidden="true"></canvas><div class="tool-head"><h3>{{t.tool.floor}}</h3>{{key.keyToolFloor}}</div><p>{{t.tool.floor_text}}</p></article>
+      <article class="tool"><canvas data-tool="volume" aria-hidden="true"></canvas><div class="tool-head"><h3>{{t.tool.volume}}</h3>{{key.keyToolVolume}}</div><p>{{t.tool.volume_text}}</p></article>
+      <article class="tool"><canvas data-tool="stack" aria-hidden="true"></canvas><div class="tool-head"><h3>{{t.tool.stack}}</h3>{{key.keyToolStack}}</div><p>{{t.tool.stack_text}}</p></article>
+      <article class="tool"><canvas data-tool="material" aria-hidden="true"></canvas><div class="tool-head"><h3>{{t.tool.material}}</h3>{{key.keyToolMaterial}}</div><p>{{t.tool.material_text}}</p></article>
+    </div>
+  </div>
+</section>
+
+<section class="band-section" id="together">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="eyebrow">{{t.feat.eyebrow}}</p>
+      <h2>{{t.feat.h}}</h2>
+    </div>
+    <div class="features">
+      <div class="feature">
+        <h3>{{t.feat.mp_h}}</h3>
+        <p>{{t.feat.mp}}</p>
+      </div>
+      <div class="feature">
+        <h3>{{t.feat.preview_h}}</h3>
+        <p>{{t.feat.preview}}</p>
+        <div class="swatches">
+          <span><i class="sw-start"></i>{{t.feat.sw_start}}</span>
+          <span><i class="sw-holo"></i>{{t.feat.sw_build}}</span>
+          <span><i class="sw-end"></i>{{t.feat.sw_end}}</span>
+        </div>
+      </div>
+      <div class="feature">
+        <h3>{{t.feat.levels_h}}</h3>
+        <p>{{t.feat.levels}}</p>
+        <div class="levels">
+          <div><strong>Quick</strong><span>{{t.feat.level_quick}}</span></div>
+          <div><strong>Builder</strong><span>{{t.feat.level_builder}}</span></div>
+          <div><strong>Architect</strong><span>{{t.feat.level_architect}}</span></div>
+        </div>
+      </div>
+      <div class="feature">
+        <h3>{{t.feat.undo_h}}</h3>
+        <p>{{t.feat.undo}}</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="band-section" id="install">
+  <div class="wrap install">
+    <div>
+      <div class="section-head">
+        <p class="eyebrow">{{t.install.eyebrow}}</p>
+        <h2>{{t.install.h}}</h2>
+      </div>
+      <ol class="steps">
+        <li><div><h3>{{t.install.s1_h}}</h3><p>{{alines.file}}. {{t.install.s1}}</p></div></li>
+        <li><div><h3>{{t.install.s2_h}}</h3><p>{{t.install.s2}}</p></div></li>
+        <li><div><h3>{{t.install.s3_h}}</h3><p>{{t.install.s3}}</p></div></li>
+      </ol>
+    </div>
+    <div class="aside">
+      <div class="callout">
+        <h3>{{t.install.warn_h}}</h3>
+        <p>{{t.install.warn_smartscreen}}</p>
+        <p>{{t.install.warn_sac}}</p>
+      </div>
+      {{alines.verify}}
+    </div>
+  </div>
+</section>
+
+<section class="band-section" id="edition">
+  <div class="wrap edition">
+    <div>
+      <div class="section-head">
+        <p class="eyebrow">{{t.edition.eyebrow}}</p>
+        <h2>ShroudForge AL Edition</h2>
+      </div>
+      <div class="prose">
+        <p>{{t.edition.p1}}</p>
+        <p>{{t.edition.p2}}</p>
+        <p>{{t.edition.p3}}</p>
+      </div>
+    </div>
+    <div class="pairs">
+      <div class="pair"><div><strong>ShroudForge {{alines.edition}}</strong><small>{{t.edition.sf_sub}}</small></div><span class="tag">MIT · Bonsaibauer</span></div>
+      <div class="pair"><div><strong>Architect Lines {{alines.version}}</strong><small>{{t.edition.alines_sub}}</small></div><span class="tag gold">Emberwright</span></div>
+      <div class="pair"><div><strong>{{t.edition.others}}</strong><small>{{t.edition.others_sub}}</small></div><span class="tag">{{t.edition.unchanged}}</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="band-section" id="keys">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="eyebrow">{{t.keys.eyebrow}}</p>
+      <h2>{{t.keys.h}}</h2>
+    </div>
+    <div class="table-scroll">
+      <table>
+        <thead><tr><th scope="col">{{t.keys.col_action}}</th><th scope="col">{{t.keys.col_key}}</th><th scope="col">{{t.keys.col_what}}</th></tr></thead>
+        <tbody>
+{{alines.keys_rows}}
+        </tbody>
+      </table>
+    </div>
+    <p class="note">{{t.keys.note}}</p>
+  </div>
+</section>
+
+<section class="band-section" id="faq">
+  <div class="wrap two">
+    <div>
+      <div class="section-head">
+        <p class="eyebrow">{{t.log.eyebrow}}</p>
+        <h2>{{t.log.h}}</h2>
+        <p class="note">{{t.log.lang_note}}</p>
+      </div>
+      <ol class="log">
+{{alines.changelog}}
+      </ol>
+    </div>
+    <div>
+      <div class="section-head">
+        <p class="eyebrow">{{t.faq.eyebrow}}</p>
+        <h2>{{t.faq.h}}</h2>
+      </div>
+      <details><summary>{{t.faq.q_materials}}</summary><p>{{t.faq.a_materials}}</p></details>
+      <details><summary>{{t.faq.q_server}}</summary><p>{{t.faq.a_server}}</p></details>
+      <details><summary>{{t.faq.q_friends}}</summary><p>{{t.faq.a_friends}}</p></details>
+      <details><summary>{{t.faq.q_uninstall}}</summary><p>{{t.faq.a_uninstall}}</p></details>
+      <details><summary>{{t.faq.q_data}}</summary><p>{{t.faq.a_data}}</p></details>
+      <details><summary>{{t.faq.q_bug}}</summary><p>{{t.faq.a_bug}}</p></details>
+    </div>
+  </div>
+</section>
+
+<div class="band">
+  <div class="wrap">
+    <div>
+      <h2>{{t.band.h}}</h2>
+      <p>{{t.band.p}}</p>
+    </div>
+    <div class="pills">
+      <a class="pill discord" href="https://discord.gg/Pbev3kJmdu"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i-discord"/></svg><span>{{t.soon.discord}}<small>discord.gg/Pbev3kJmdu</small></span></a>
+      <a class="pill coffee" href="https://buymeacoffee.com/xxxdukexxx"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i-coffee"/></svg><span>Buy me a coffee<small>{{t.coffee.sub}}</small></span></a>
+    </div>
+  </div>
+</div>
+<script src="{{root}}assets/scene.js" defer></script>
+<script src="{{root}}assets/page.js" defer></script>

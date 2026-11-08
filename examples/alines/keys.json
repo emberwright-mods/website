@@ -1,0 +1,114 @@
+{
+  "schema": 1,
+  "version": "0.61.0",
+  "keys": [
+    {
+      "action": "start point",
+      "id": "keyMark",
+      "key": "1",
+      "level": "quick"
+    },
+    {
+      "action": "waypoint",
+      "id": "keyLine",
+      "key": "2",
+      "level": "builder"
+    },
+    {
+      "action": "end point",
+      "id": "keyWall",
+      "key": "3",
+      "level": "builder"
+    },
+    {
+      "action": "build it",
+      "id": "keyVolume",
+      "key": "F",
+      "level": "quick"
+    },
+    {
+      "action": "clear points",
+      "id": "keyStack",
+      "key": "5",
+      "level": "quick"
+    },
+    {
+      "action": "free point",
+      "id": "keyFreePoint",
+      "key": "LeftAlt",
+      "level": "builder"
+    },
+    {
+      "action": "wall thickness",
+      "id": "keyWallThickness",
+      "key": "LeftShift",
+      "level": "quick"
+    },
+    {
+      "action": "tool line",
+      "id": "keyToolLine",
+      "key": "F1",
+      "level": "quick"
+    },
+    {
+      "action": "tool wall",
+      "id": "keyToolWall",
+      "key": "F2",
+      "level": "quick"
+    },
+    {
+      "action": "tool floor",
+      "id": "keyToolFloor",
+      "key": "F3",
+      "level": "quick"
+    },
+    {
+      "action": "tool volume",
+      "id": "keyToolVolume",
+      "key": "F4",
+      "level": "quick"
+    },
+    {
+      "action": "tool stack",
+      "id": "keyToolStack",
+      "key": "F5",
+      "level": "builder"
+    },
+    {
+      "action": "tool change material",
+      "id": "keyToolMaterial",
+      "key": "F6",
+      "level": "builder"
+    },
+    {
+      "action": "switch fill/clear",
+      "id": "keyMode",
+      "key": "Q",
+      "level": "quick"
+    },
+    {
+      "action": "undo",
+      "id": "keyUndo",
+      "key": "F7",
+      "level": "quick"
+    },
+    {
+      "action": "redo",
+      "id": "keyRedo",
+      "key": "F8",
+      "level": "quick"
+    },
+    {
+      "action": "switch panel",
+      "id": "keyPanel",
+      "key": "T",
+      "level": "quick"
+    },
+    {
+      "action": "switch level",
+      "id": "keyLevel",
+      "key": "Backquote",
+      "level": "quick"
+    }
+  ]
+}
