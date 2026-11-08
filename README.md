@@ -17,3 +17,4 @@ Source of [emberwright-mods.com](https://emberwright-mods.com): the home of Embe
 - No cookies, no analytics, no third-party requests (see the privacy page). Changing this means updating the privacy page in every language first.
 - The logos come from the Architect Lines repository (`assets/logo/`, see its `assets/README.md`); never redraw them here.
 - Discord: https://discord.gg/Pbev3kJmdu
+- YouTube: https://www.youtube.com/@emberwright-mods
